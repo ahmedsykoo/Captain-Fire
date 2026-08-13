@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Captain Fire</string>
+
+    <string name="accessibility_description">
+        Captain Fire يقرأ بيانات عروض الرحلات من تطبيقات النقل لعرض صافي السعر لكل كيلومتر.
+    </string>
+
+</resources>
