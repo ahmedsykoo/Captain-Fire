@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FairKM</string>
+    <string name="accessibility_service_description">يقرأ عرض سعر الرحلة من تطبيق inDrive عشان يحسبلك صافي أرباحك لحظياً</string>
+    <string name="overlay_channel_name">مؤشر السعر العائم</string>
+</resources>
