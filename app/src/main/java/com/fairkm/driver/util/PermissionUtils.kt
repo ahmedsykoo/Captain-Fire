@@ -1,9 +1,9 @@
 package com.fairkm.driver.util
 
-import android.accessibilityservice.AccessibilityService
 import android.content.ComponentName
 import android.content.Context
 import android.provider.Settings
+import com.fairkm.driver.service.FareAccessibilityService
 
 object PermissionUtils {
 
@@ -14,7 +14,7 @@ object PermissionUtils {
     fun isAccessibilityServiceEnabled(context: Context): Boolean {
         val expectedComponent = ComponentName(
             context,
-            AccessibilityService::class.java
+            FareAccessibilityService::class.java
         )
 
         val enabledServices = Settings.Secure.getString(
@@ -24,6 +24,8 @@ object PermissionUtils {
 
         return enabledServices
             .split(':')
-            .any { ComponentName.unflattenFromString(it) == expectedComponent }
+            .any {
+                ComponentName.unflattenFromString(it) == expectedComponent
+            }
     }
 }
